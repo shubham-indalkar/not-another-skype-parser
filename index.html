@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A clean, modern viewer for Skype chat exports with search capabilities and media display">
+  <meta name="author" content="Shubham Indalkar">
+  <title>Not Another Skyper Parser</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Ctext y="0.9em" font-size="90"%3E💬%3C/text%3E%3C/svg%3E'>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Step 1: file picker with instructions -->
+    <div class="step-1 file-load">
+      <div class="instructions">
+        <h1>Not Another Skyper Parser</h1>
+        <ol class="setup-steps">
+          <li><a href="https://secure.skype.com/en/data-export" target="_blank" rel="noopener">Request an export</a> of your Skype conversations</li>
+          <li>Download the exported file when available</li>
+          <li>Extract the TAR file:<br>
+              <small>• On Windows: Use <a href="https://www.7-zip.org/download.html" target="_blank" rel="noopener">7-zip</a> or similar tool<br>
+              • On Mac: Double-click the file to extract it</small>
+          </li>
+          <li><strong>Important:</strong> Download the <a href="https://github.com/shubham-indalkar/not-another-skype-parser/archive/refs/heads/main.zip" target="_blank" rel="noopener">source code zip</a> and extract it to the same folder as your Skype export.<br>
+          </li>
+          <li>Select the <code>messages.json</code> file from your export:</li>
+        </ol>
+      </div>
+      <div class="file-selector">
+        <input type="file" id="fileInput" accept=".json" />
+        <button id="btnLoad">Load</button>
+      </div>
+    </div>
+
+    <!-- Step 2: chat UI -->
+    <div class="step-2 hidden">
+      <div class="chat-interface">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-header">Chats</div>
+          <div class="sidebar-controls">
+            <div class="search-input-wrapper">
+              <input type="text" id="searchConversationsInput" placeholder="Search chats…" />
+              <button class="chat-search-clear-btn" aria-label="Clear chat search">×</button>
+            </div>
+            <!-- Legacy button kept for backward compatibility -->
+            <button id="clearSearchChatsBtn" class="search-clear-btn hidden">×</button>
+          </div>
+          <ul id="conversationList"></ul>
+        </aside>
+
+        <!-- Main chat area -->
+        <main class="main-content">
+          <div class="chat-header">
+            <h2 id="selectedConversationHeader">Select a chat</h2>
+            <div class="chat-controls hidden">
+              <button id="toggleSearchBtn">🔍</button>
+              <button id="closeChatBtn">✕</button>
+            </div>
+          </div>
+
+          <div class="search-bar hidden">
+            <div class="search-input-container">
+              <input type="text" id="searchMessagesInput" placeholder="Search messages…" />
+              <button class="search-clear-btn" title="Clear search">×</button>
+            </div>
+            <button id="prevSearchResult" title="Previous result" disabled>↑</button>
+            <button id="nextSearchResult" title="Next result" disabled>↓</button>
+            <button id="clearSearchBtn" title="Close search">✕</button>
+          </div>
+
+          <ul id="messages"></ul>
+        </main>
+      </div>
+    </div>
+    
+    <!-- Footer with project info -->
+    <div class="app-footer">
+      <p>Not Another Skyper Parser | <a href="https://github.com/shubham-indalkar/not-another-skype-parser" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
