@@ -80,4 +80,4 @@ MIT License - See LICENSE file for details.
 
 ## Credits
 
-Created by [Shubham Indalkar] - Not Another Skyper Parser
+Created by Shubham Indalkar - Not Another Skyper Parser
