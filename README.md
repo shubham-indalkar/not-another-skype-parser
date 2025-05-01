@@ -4,10 +4,10 @@ A clean, modern viewer for Skype chat exports with enhanced search capabilities 
 
 ## Setup Instructions
 
-1. [Request an export](https://secure.skype.com/en/data-export) of your Skype conversations
-2. Download your Skype export when it becomes available
-3. Extract the downloaded TAR file using [7-zip](https://www.7-zip.org/download.html) or your preferred extraction tool
-4. Download the [source code zip](https://github.com/shubham-indalkar/not-another-skype-parser/archive/refs/heads/main.zip) and extract it to the same folder as your Skype export
+1. [Request an export](https://secure.skype.com/en/data-export) of your Skype conversations.
+2. Download your Skype export when it becomes available.
+3. Extract the downloaded TAR file using [7-zip](https://www.7-zip.org/download.html) or your preferred extraction tool.
+4. Download the [source code zip](https://github.com/shubham-indalkar/not-another-skype-parser/archive/refs/heads/main.zip) and extract it to the same folder as your Skype export.
 
    For media to display correctly, your folder should look like this:
    ```
@@ -23,21 +23,21 @@ A clean, modern viewer for Skype chat exports with enhanced search capabilities 
    └── 📄 README.md
    ```
 
-5. Open `index.html` in your browser
-6. Select the `messages.json` file when prompted
-7. Click "Load" to view your conversations
+5. Open `index.html` in your browser.
+6. Select the `messages.json` file when prompted.
+7. Click "Load" to view your conversations.
 
 ## Preview
 
 ### App in Action
 
-![App Preview GIF](path/to/preview.gif)
+![App Preview](demo/preview.gif)
 
 ### Screenshots
 
 | Home Screen | Conversation View | Media Preview |
 |------------|-------------------|---------------|
-| ![Home](path/to/home.png) | ![Conversation](path/to/conversation.png) | ![Media](path/to/media.png) |
+| ![Home](demo/home.png) | ![Conversation](demo/conversation.png) | ![Media](demo/media.png) |
 
 ## Why Use This Instead?
 
