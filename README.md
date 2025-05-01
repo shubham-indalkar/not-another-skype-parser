@@ -15,6 +15,7 @@ A clean, modern viewer for Skype chat exports with enhanced search capabilities 
    ```
    📁 8_live_.cid.xxxxxxxxxxxx_export
    ├── 📁 css
+   ├── 📁 demo
    ├── 📁 js
    ├── 📁 media
    ├── 📄 .gitignore
