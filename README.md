@@ -6,7 +6,9 @@ A clean, modern viewer for Skype chat exports with enhanced search capabilities 
 
 1. [Request an export](https://secure.skype.com/en/data-export) of your Skype conversations.
 2. Download your Skype export when it becomes available.
-3. Extract the downloaded TAR file using [7-zip](https://www.7-zip.org/download.html) or your preferred extraction tool.
+3. Extract the downloaded TAR file:
+   - On Windows, you can use the free [7-zip](https://www.7-zip.org/download.html) or similar tool
+   - On Mac, you can double-click the file to extract it
 4. Download the [source code zip](https://github.com/shubham-indalkar/not-another-skype-parser/archive/refs/heads/main.zip) and extract it to the same folder as your Skype export.
 
    For media to display correctly, your folder should look like this:
@@ -55,11 +57,11 @@ Compared to the official Skype export viewer, Not Another Skyper Parser offers s
 
 ## Usage
 
-1. Open the application in your browser
-2. Load a Skype `messages.json` export file
-3. Browse conversations in the sidebar
-4. Search across conversations or within a specific chat
-5. Click on media to view it in a larger preview
+1. Open the application in your browser.
+2. Load a Skype `messages.json` export file.
+3. Browse conversations in the sidebar.
+4. Search across conversations or within a specific chat.
+5. Click on media to view it in a larger preview.
 
 ## Development
 
